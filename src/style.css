@@ -49,3 +49,58 @@ h1{font-size:clamp(26px,3vw,32px);letter-spacing:-1.4px}
 .app.light .help-box{background:#faf5ef}
 .app.light .stat-card,.app.light .panel{box-shadow:0 5px 20px rgba(25,51,85,.05)}
 @media(max-width:800px){.topbar{padding-inline:18px}.content{padding:24px 17px}.sidebar{width:255px;min-width:255px}}
+
+/* Style D — Clair Premium: clean corporate white and emerald green */
+.app{
+ --bg:#101b28;--sidebar:#152333;--surface:#1d2d3e;--surface2:#273b4d;
+ --line:#33495b;--text:#f5f9fc;--muted:#a9bdca;--grid:#33495b;--blue:#25a44c;
+}
+.app.light{
+ --bg:#f2f6fa;--sidebar:#fff;--surface:#fff;--surface2:#edf5f1;
+ --line:#e2eaf0;--text:#172536;--muted:#728194;--grid:#e6edf3;--blue:#21a345;
+}
+.app.light .sidebar{background:#fff;border-right:1px solid #e8eef3;color:#172536;box-shadow:5px 0 24px #12243a05}
+.brand-icon{background:linear-gradient(140deg,#21b64d,#148e38);box-shadow:0 7px 22px #1caa4b26}
+.brand strong span{color:#21a345}
+.app.light .brand small,.app.light .nav-label{color:#8291a1}
+.app.light .nav-item{color:#465668}
+.app.light .nav-item:hover{background:#f1f8f3;color:#138f3c}
+.nav-item.selected,.app.light .nav-item.selected{background:linear-gradient(110deg,#21b248,#159d3a);color:#fff;box-shadow:0 6px 15px #20a94722}
+.nav-item.selected svg,.app.light .nav-item.selected svg{color:#fff}
+.app.light .nav-item b{background:#fff2;color:#fff}
+.app.light .help-box{background:#f3f9f5;border:1px solid #deede3}
+.app.light .help-icon{color:#18a243}
+.app.light .topbar{background:#fff;border-color:#e8eef3}
+.app.light .avatar{background:#1b344a;color:#fff}
+.app.light .eyebrow{color:#199d40}
+.app.light .stat-card,.app.light .panel{background:#fff;border-color:#e6edf2;box-shadow:0 5px 24px #182c4309}
+.app.light .stat-icon.blue{background:#e5f8e9;color:#20a747}
+.app.light .stat-icon.green{background:#e6f8ee;color:#12a55c}
+.app.light .stat-icon.orange{background:#e8f2ff;color:#2977dc}
+.app.light .stat-icon.purple{background:#fff0ee;color:#e76552}
+.btn.primary{background:#20a847;border-color:#20a847;box-shadow:0 7px 16px #1caa482a}
+.btn.primary:hover{background:#178e39}
+.app.light .btn.secondary{background:#fff}
+.app.light .demo-chip{color:#138e3c;border-color:#bce8c7;background:#effbf1}
+.app.light .status-panel,.app.light .chart-panel{background:#fff}
+.app.light .pill{background:#f8fafc}
+.fleet-hero{min-height:178px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;border-radius:15px;margin-bottom:22px;padding:26px 33px;background:linear-gradient(105deg,#e1f3fa 0%,#e8f4f4 46%,#b7d9e4 100%);border:1px solid #dceaf0}
+.fleet-hero-copy{position:relative;z-index:2;max-width:540px}
+.fleet-hero-kicker{font-size:10px;letter-spacing:1.6px;font-weight:800;color:#168d47}
+.fleet-hero h2{font:800 clamp(25px,3vw,35px) 'Plus Jakarta Sans',sans-serif;letter-spacing:-1.3px;color:#172c3c;margin:8px 0 7px}
+.fleet-hero p{color:#4a6271;font-size:13px;line-height:1.6;margin:0 0 15px}
+.fleet-hero-link{background:#1fa748;color:#fff;border:0;border-radius:8px;padding:9px 15px;font-size:12px;font-weight:800;display:inline-flex;gap:16px;align-items:center;box-shadow:0 5px 14px #168f3b28}
+.fleet-hero-link:hover{background:#14883a}
+.fleet-hero-art{position:absolute;right:0;top:0;bottom:0;width:42%;overflow:hidden;background:linear-gradient(150deg,#c3e3ed,#e2f0e5)}
+.hero-sun{position:absolute;right:25%;top:13%;width:74px;height:74px;background:#fff8dbb0;border-radius:50%;filter:blur(1px)}
+.hero-hill{position:absolute;left:-15%;width:145%;height:80%;bottom:-56%;border-radius:50% 50% 0 0}
+.hero-hill-back{background:#94b8a4;transform:rotate(-12deg);bottom:-46%}
+.hero-hill-front{background:#5d8e7c;transform:rotate(8deg);bottom:-62%}
+.hero-truck{position:absolute;right:13%;bottom:18%;color:#f9ffff;filter:drop-shadow(0 8px 3px #234b5666);stroke-width:1.5}
+.app.dark .fleet-hero{background:linear-gradient(105deg,#1a3440,#23535b);border-color:#2b5357}
+.app.dark .fleet-hero h2{color:#fff}
+.app.dark .fleet-hero p{color:#d0e6e7}
+.app.dark .fleet-hero-kicker{color:#69e69a}
+.app.dark .fleet-hero-art{opacity:.65}
+@media(max-width:760px){.fleet-hero{min-height:175px;padding:23px 19px}.fleet-hero-copy{max-width:80%}.fleet-hero-art{width:48%;opacity:.4}.fleet-hero h2{font-size:25px}.fleet-hero p{font-size:12px}.app.light .sidebar{background:#fff}}
+@media(max-width:420px){.fleet-hero-copy{max-width:100%}.fleet-hero-art{opacity:.2}.fleet-hero{min-height:185px}}
