@@ -152,3 +152,18 @@ h1{font-size:clamp(26px,3vw,32px);letter-spacing:-1.4px}
 @media(max-width:1080px){.charts-grid{grid-template-columns:1fr 1fr}.status-panel{display:block}.legend{padding:0}.donut{margin:auto}}
 @media(max-width:760px){.fleet-hero{min-height:145px}.fleet-hero-copy{max-width:65%}.fleet-hero-art{width:65%;opacity:.75}.charts-grid{grid-template-columns:1fr}.status-panel{display:grid;grid-template-columns:1fr 1fr}.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stat-card{padding:12px;column-gap:8px}.stat-value{font-size:20px}}
 @media(max-width:420px){.fleet-hero-copy{max-width:72%}.fleet-hero-art{opacity:.45}.status-panel{display:block}.stat-icon{width:35px;height:35px}.stat-card{grid-template-columns:35px 1fr}.stat-label{font-size:10px}.stat-value{font-size:18px}}
+
+/* Useful fleet alerts — compact, responsive and visually consistent with Style D */
+.fleet-alerts{margin:0 0 14px;padding:14px 18px;border:1px solid #f0dca7;background:#fffaf0;border-radius:11px;color:#45351e}
+.fleet-alerts-title{display:flex;align-items:center;gap:9px;color:#976018;font-size:13px;margin-bottom:9px}
+.fleet-alerts-title span{margin-left:auto;font-size:11px;color:#9a763e}
+.fleet-alerts-list{display:flex;gap:8px;flex-wrap:wrap}
+.fleet-alert-item{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #f3e7d1;border-radius:8px;padding:8px 10px;font-size:11px}
+.fleet-alert-item span{font-weight:800;color:#b87819}
+.fleet-alert-item strong{color:#35404c}
+.fleet-alert-item time{color:#77664d;font-variant-numeric:tabular-nums}
+.app.dark .fleet-alerts{background:#382d1c;border-color:#71532b;color:#f5e9d0}
+.app.dark .fleet-alert-item{background:#2d2b29;border-color:#665037}
+.app.dark .fleet-alert-item strong{color:#fff}
+.app.dark .fleet-alert-item time{color:#e8d0a8}
+@media(max-width:760px){.fleet-alerts{padding:12px}.fleet-alert-item{width:100%;justify-content:space-between;flex-wrap:wrap}}
