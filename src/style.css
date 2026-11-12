@@ -104,3 +104,51 @@ h1{font-size:clamp(26px,3vw,32px);letter-spacing:-1.4px}
 .app.dark .fleet-hero-art{opacity:.65}
 @media(max-width:760px){.fleet-hero{min-height:175px;padding:23px 19px}.fleet-hero-copy{max-width:80%}.fleet-hero-art{width:48%;opacity:.4}.fleet-hero h2{font-size:25px}.fleet-hero p{font-size:12px}.app.light .sidebar{background:#fff}}
 @media(max-width:420px){.fleet-hero-copy{max-width:100%}.fleet-hero-art{opacity:.2}.fleet-hero{min-height:185px}}
+
+/* Exact Style D composition — white corporate layout, green highlights, photographic truck banner */
+.app.light{--bg:#f4f7fa;--surface:#fff;--surface2:#f3f8fa;--line:#e8eef3;--text:#152332;--muted:#778596}
+.app.light .sidebar{background:#fff;box-shadow:none}
+.app.light .brand-icon{background:transparent;box-shadow:none;color:#20a542;width:32px}
+.app.light .brand strong{font-size:17px;letter-spacing:-.65px;color:#101e2c}
+.app.light .brand strong span{color:#101e2c}
+.app.light .brand small{letter-spacing:.3px;font-size:9px;color:#667787}
+.app.light .sidebar .nav-item{height:42px;font-size:12px;padding:10px 12px;border-radius:7px}
+.app.light .sidebar .nav-item.selected{background:#21aa42;color:#fff}
+.app.light .sidebar .nav-item:not(.selected):hover{background:#eaf8ed;color:#188c37}
+.app.light .topbar{height:64px}
+.app.light .breadcrumb{font-weight:700;font-size:14px;color:#142333}
+.app.light .breadcrumb strong{font-weight:800}
+.app.light .content{padding-top:17px}
+.dashboard-heading{display:none}
+.fleet-hero{min-height:143px;border-radius:11px;background:#e4f1f8;border:0;padding:20px 23px;margin-bottom:14px;isolation:isolate}
+.fleet-hero-copy{max-width:60%}
+.fleet-hero-kicker{display:none}
+.fleet-hero h2{font-size:clamp(24px,2.4vw,32px);color:#102334;margin:0 0 6px}
+.fleet-hero p{font-size:13px;color:#243b4c;margin:0}
+.fleet-hero-link{display:none}
+.fleet-hero-art{width:59%;height:100%;right:0;top:0;bottom:0;opacity:1;background-image:linear-gradient(90deg,#e4f1f8 0%,#e4f1f800 38%),url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1100&q=85');background-size:cover;background-position:center 53%;z-index:-1}
+.fleet-hero-art .hero-sun,.fleet-hero-art .hero-hill,.fleet-hero-art .hero-truck{display:none}
+.stats-grid{gap:12px;margin-bottom:15px}
+.stat-card{min-height:91px;display:grid;grid-template-columns:43px 1fr;grid-template-rows:auto auto auto;column-gap:12px;align-content:center;padding:14px 15px}
+.stat-icon{grid-row:1/4;grid-column:1;margin:0;width:42px;height:42px;border-radius:11px}
+.stat-label{grid-column:2;grid-row:2;font-size:11px;margin:0}
+.stat-value{grid-column:2;grid-row:1;font-size:23px;line-height:1.2}
+.stat-detail{grid-column:2;grid-row:3;font-size:9px;margin:2px 0 0}
+.charts-grid{grid-template-columns:1fr 1.05fr;gap:13px;margin-bottom:15px}
+.charts-grid>.chart-panel{order:2}
+.charts-grid>.status-panel{order:1}
+.chart-panel,.status-panel{padding:19px 18px}
+.panel-heading h2{font-size:15px;color:var(--text)}
+.app.light .panel-heading p{color:#8795a4}
+.chart-area{height:205px;margin-top:12px}
+.donut{height:195px;max-width:220px;margin:0}
+.donut-center strong{font-size:27px}
+.status-panel{display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.status-panel .panel-heading{grid-column:1/-1}
+.legend{padding:0 6px}
+.legend>div{font-size:11px}
+.bottom-grid{gap:13px}
+.app.light .stat-card,.app.light .panel{box-shadow:0 3px 15px #152b4210}
+@media(max-width:1080px){.charts-grid{grid-template-columns:1fr 1fr}.status-panel{display:block}.legend{padding:0}.donut{margin:auto}}
+@media(max-width:760px){.fleet-hero{min-height:145px}.fleet-hero-copy{max-width:65%}.fleet-hero-art{width:65%;opacity:.75}.charts-grid{grid-template-columns:1fr}.status-panel{display:grid;grid-template-columns:1fr 1fr}.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stat-card{padding:12px;column-gap:8px}.stat-value{font-size:20px}}
+@media(max-width:420px){.fleet-hero-copy{max-width:72%}.fleet-hero-art{opacity:.45}.status-panel{display:block}.stat-icon{width:35px;height:35px}.stat-card{grid-template-columns:35px 1fr}.stat-label{font-size:10px}.stat-value{font-size:18px}}
